@@ -28,29 +28,29 @@ func NewLogger(p string) *Logger {
 }
 
 // Create Non-Formatted Logs
-func (l *Logger) Debug(v ...interface{}){
-	l.debug.Panicln(v ...)
+func (l *Logger) Debug(v ...interface{}) {
+	l.debug.Panicln(v...)
 }
-func (l *Logger) Info(v ...interface{}){
-	l.info.Panicln(v ...)
+func (l *Logger) Info(v ...interface{}) {
+	l.info.Panicln(v...)
 }
-func (l *Logger) Warn(v ...interface{}){
-	l.warning.Panicln(v ...)
+func (l *Logger) Warn(v ...interface{}) {
+	l.warning.Panicln(v...)
 }
-func (l *Logger) Error(v ...interface{}){
-	l.err.Panicln(v ...)
+func (l *Logger) Error(v ...interface{}) {
+	l.err.Panicln(v...)
 }
 
 // Create Format Enable Logs
-func (l *Logger) Debugf(format string,v ...interface{}){
-	l.debug.Printf(format,v...)
+func (l *Logger) Debugf(format string, v ...interface{}) {
+	l.debug.Printf(format, v...)
 }
-func (l *Logger) Infof(format string,v ...interface{}){
-	l.info.Printf(format,v...)
+func (l *Logger) Infof(format string, v ...interface{}) {
+	l.info.Printf(format, v...)
 }
-func (l *Logger) Warnf(format string,v ...interface{}){
-	l.warning.Printf(format,v...)
+func (l *Logger) Warnf(format string, v ...interface{}) {
+	l.warning.Printf(format, v...)
 }
-func (l *Logger) Errorf(format string,v ...interface{}){
-	l.err.Printf(format,v...)
+func (l *Logger) Errorf(format string, v ...interface{}) {
+	l.err.Printf(format, v...)
 }
